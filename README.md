@@ -22,7 +22,7 @@ My intention in creating this guide is to spread the knowledge of bot making and
 
 Alright, let's dive into how to set all this fun stuff up! I'll divide it up into OSes.
 
-###Windows
+####Windows
 
 1. Download and install [node.js](https://nodejs.org/). Version shouldn't matter. I use 4.3.1.
 2. Installing node.js will also install npm, a package manager for node. This will make installing the packages super easy. To install the packages we need for the bot, type `npm install packagename` into command prompt. To start, we need `steamcommunity` and `steam-tradeoffer-manager`, written by [DoctorMcKay](http://github.com/DoctorMcKay). Open up command prompt (Start Menu -> cmd), navigate to where you want it installed (I did it in C://Users/Maxwell just because that's where my cmd starts, I recommend doing it in your login's main directory too.) Type `npm install steamcommunity`, wait for it to finish, and then do `npm install steam-tradeoffer-manager`
@@ -31,7 +31,7 @@ Alright, let's dive into how to set all this fun stuff up! I'll divide it up int
 
 ![Like this](http://i.imgur.com/J3r6Lv5.png "A correctly installed module.")
 
-###Linux
+####Linux
 
 Disclaimer: I don't know Linux very well. My experience is limited just to Ubuntu on my VPS.
 
@@ -42,3 +42,9 @@ Disclaimer: I don't know Linux very well. My experience is limited just to Ubunt
 $ npm install -g steamcommunity
 $ npm install -g steam-tradeoffer-manager
 ```
+
+####Macintosh
+
+I don't know how to use Macs well enough, sorry :P I'll learn and update the guide later.
+
+##Intro
