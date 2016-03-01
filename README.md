@@ -38,7 +38,7 @@ Disclaimer: I don't know Linux very well. My experience is limited just to Ubunt
 1. My VPS came with node.js preinstalled (DigitalOcean one-click apps), so I don't know how to correctly do that. Try this: https://bitnami.com/stack/nodejs/installer
 2. 
 
-```
+```Linux Kernel Module
 $ npm install -g steamcommunity
 $ npm install -g steam-tradeoffer-manager
 ```
