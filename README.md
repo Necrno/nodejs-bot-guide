@@ -82,3 +82,5 @@ I won't explain the first one, simply because I don't know how it works. If you 
 ##Finishing Up
 
 At this point in the guide you should have your bot accounts's username and password. Hopefully you've bought a $5 or more game on the account, so it isn't stuck at level 0 and looks super sketchy. (I personally like to buy CS:GO during a Steam Sale and level my bots to level 10 for the text box.) If you plan to make a trade bot, you should also have the shared and identity secret for your account.
+
+[Next Chapter - Basic Login Bot]("./Chapter 1 - Basic Logging-in Bot/README.md")
