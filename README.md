@@ -68,7 +68,7 @@ and
 
 * [Steam Desktop Auth](github.com/Jessecar96/SteamDesktopAuthenticator) aka SDA.
 
-I won't explain the first one, simply because I don't know how it works. If you already have authentication set up on an iOS device and want to use that account for the bot it should be easy. However, if you own an Android device or haven't set up authentication on the bot account yet, SDA is preferable.
+I won't explain the first one, simply because I don't know how it works. If you already have authentication set up on an iOS device and want to use that account for the bot it should be easy. However, if you own an Android device or haven't set up authentication on the bot account yet, SDA is preferable. (An alternative for Android is also [this](https://www.reddit.com/r/SteamBot/comments/3w5zwb/info_get_your_2fa_codes_from_android_no_root/))
 
 ####Setting up the Authenticator with SDA
 
