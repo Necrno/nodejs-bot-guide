@@ -34,3 +34,23 @@ node.js comes with npm, a package manager for node. This allows us to use the pa
 ```js
 var SteamCommunity = require('steamcommunity');
 ```
+
+The `require` part tells node to use the npm module steamcommunity, and the `var SteamCommunity = ` part stores the module in a variable named SteamCommunity. The next line is:
+
+```js
+var steam = new SteamCommunity();
+```
+
+which creates a SteamCommunity object from the module. It basically allows us to use the functions of the steamcommunity module and storing that object in the `steam` variable. **You don't need to know how this works right now**, I will explain this more in depth later.
+
+####Objects
+
+```js
+var logOnOptions = {
+  'accountName': "CharredBot04",
+  'password': "myPasswordGoesHere"
+};
+```
+
+This creates a variable called `logOnOptions`, and stores our username and password in it. Obviously, we should replace "CharredBot04" with your account's username (the name you log in with, not display name) and "myPasswordGoesHere" with your account password (no, that's not my real password). I will explain Objects more in depth later on and what we can store in them: all we need to know is that logOnOptions has the `accountName` and `password` attributes (called *keys*).
+
