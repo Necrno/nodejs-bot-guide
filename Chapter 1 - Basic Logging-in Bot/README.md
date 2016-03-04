@@ -152,6 +152,6 @@ If you get this error, you installed your modules wrong, go back to the previous
 
 #####There was an error logging in! Error details: SteamGuard
 
-This error or the SteamGuardMobile version of this means steamguard was set up, and we can't log in without the auth code from the mobile authenticator!! Woohoo! It worked! This error is good, we'll talk about how to generate an auth code from shared secret in the next chapter!
+This error or the SteamGuardMobile version of this means steamguard was set up, and we can't log in without the auth code from the mobile authenticator!! Woohoo! The logging in part worked, at least. We'll talk about generating an auth code using sharedsecret to fully login to Steam in the next chapter.
 
 
