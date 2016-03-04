@@ -15,7 +15,6 @@ new SteamCommunity().login(logOnOptions, (err, sessionID, cookies, steamguard) =
 		console.log("There was an error logging in! Error details: " + err.message);
 		process.exit(1); //terminates program
 	} else {
-		console.log("Successfully logged in as " + accountName);
-		steam.chatLogon();
+		console.log("Successfully logged in as " + logOnOptions.accountName);
 	}
 });

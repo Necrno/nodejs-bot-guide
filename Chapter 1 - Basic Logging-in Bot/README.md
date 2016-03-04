@@ -19,7 +19,7 @@ steam.login(logOnOptions, function(err, sessionID, cookies, steamguard) {
 		console.log("There was an error logging in! Error details: " + err.message);
 		process.exit(1); //terminates program
 	} else {
-		console.log("Successfully logged in as " + accountName);
+		console.log("Successfully logged in as " + logOnOptions.accountName);
 		steam.chatLogon();
 	}
 });
@@ -62,7 +62,7 @@ steam.login(logOnOptions, function(err, sessionID, cookies, steamguard) {
 		console.log("There was an error logging in! Error details: " + err.message);
 		process.exit(1); //terminates program
 	} else {
-		console.log("Successfully logged in as " + accountName);
+		console.log("Successfully logged in as " + logOnOptions.accountName);
 		steam.chatLogon();
 	}
 });
@@ -76,7 +76,7 @@ function(err, sessionID, cookies, steamguard) {
 		console.log("There was an error logging in! Error details: " + err.message);
 		process.exit(1); //terminates program
 	} else {
-		console.log("Successfully logged in as " + accountName);
+		console.log("Successfully logged in as " + logOnOptions.accountName);
 		steam.chatLogon();
 	}
 }
@@ -107,7 +107,7 @@ process.exit(1); //terminates program
 As you might have been able to tell, this piece of code prints the error details to console and then terminates the program (there's nothing we can do if we didn't log in.) Let's now look at what happens if we *don't* have an error. 
 
 ```js
-console.log("Successfully logged in as " + accountName);
+console.log("Successfully logged in as " + logOnOptions.accountName);
 steam.chatLogon();
 ```
 
