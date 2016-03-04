@@ -1,5 +1,8 @@
 # Charred's node.js Guide to Steam Bots
 
+[![Codacy Badge](https://api.codacy.com/project/badge/grade/61493e5f37b245a4acb9e72a05a01cf3)](https://www.codacy.com/app/charredgrass/nodejs-bot-guide)
+[![Liscence](https://img.shields.io/badge/license-GPLv3-blue.svg)](https://github.com/charredgrass/nodejs-bot-guide/blob/master/LICENSE "GNUv3 Software Liscence")
+
 Hello! If you're reading this guide, you're probably interested in making your own bot for Steam. Luckily, I'm here to help! This guide will teach you some basic node.js, how the Steam API works, and how we can use that for bots.
 
 ##Who Am I?
