@@ -4,7 +4,7 @@ Hello! If you're reading this guide, you're probably interested in making your o
 
 ##Who Am I?
 
-Hi, I'm [Charred](http://steamcommunity.com/id/charredGrass/)! I'm a 17-year-old student / bot developer. I've written stuff from [Bitcoin for Keys bots](http://steamcommunity.com/id/keysforbtc) to Steam chat bots for group chats. My language of choice for this is of course node.js, and I've learned through [Codecademy](codecademy.com) and just experimenting on my own. I've built my entire Steam inventory, and then some, just by selling my code. That's over $1250 worth of code, and it's still growing!
+Hi, I'm [Charred](http://steamcommunity.com/id/charredGrass/)! I'm a 17-year-old student / bot developer. I've written stuff from [Bitcoin for Keys bots](http://steamcommunity.com/id/keysforbtc) to Steam chat bots for group chats. My language of choice for this is of course node.js, and I've learned through [Codecademy](http://codecademy.com) and just experimenting on my own. I've built my entire Steam inventory, and then some, just by selling my code. That's over $1250 worth of code, and it's still growing!
 
 ##Preface
 
@@ -15,7 +15,7 @@ My intention in creating this guide is to spread the knowledge of bot making and
  * [node.js](http://nodejs.org/), of course! Download and install the appropriate version for your computer.
  * These npm packages - [steamcommmunity](https://github.com/DoctorMcKay/node-steamcommunity), [steam-user](https://github.com/DoctorMcKay/node-steam-user), and [steam-tradeoffer-manager](https://github.com/DoctorMcKay/node-steam-tradeoffer-manager). I'll teach you how to set these up later in the guide.
  * an extra Steam account. I opted to create an extra Steam account for my bots, and I purchased CS:GO on it to remove its limited status. I'd reccomend doing this too (a $5 or more game must be purchased in order to get an API key and invite friends), however, in a pinch your main Steam account will do.
- * [Steam Desktop Authenticator](github.com/Jessecar96/SteamDesktopAuthenticator) if you plan to use the bot for trading and need to confirm offers.
+ * [Steam Desktop Authenticator](http://github.com/Jessecar96/SteamDesktopAuthenticator) if you plan to use the bot for trading and need to confirm offers.
  * A phone capable of receiving SMS texts if you plan on using the bot for trading.
  * Patience. Making a bot is time-consuming, testing it is even more time-consuming. Take your time, and don't expect to make a CSGO Jackpot clone in 15 minutes. 
 
@@ -66,7 +66,7 @@ In order to trade, you need mobile auth enabled in order to avoid trade holds. A
 
 and
 
-* [Steam Desktop Auth](github.com/Jessecar96/SteamDesktopAuthenticator) aka SDA.
+* [Steam Desktop Auth](http://github.com/Jessecar96/SteamDesktopAuthenticator) aka SDA.
 
 I won't explain the first one, simply because I don't know how it works. If you already have authentication set up on an iOS device and want to use that account for the bot it should be easy. However, if you own an Android device or haven't set up authentication on the bot account yet, SDA is preferable. (An alternative for Android is also [this](https://www.reddit.com/r/SteamBot/comments/3w5zwb/info_get_your_2fa_codes_from_android_no_root/))
 
