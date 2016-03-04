@@ -2,11 +2,11 @@
 // login_complex.js
 // An example script to log in to Steam - complex version.
 
-var SteamCommunity = require('steamcommunity');
+var SteamCommunity = require("steamcommunity");
 
 var logOnOptions = {
-  'accountName': "CharredBot04",
-  'password': "myPasswordGoesHere"
+  "accountName": "CharredBot04",
+  "password": "myPasswordGoesHere"
 };
 
 //logs in via browser
