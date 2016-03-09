@@ -154,4 +154,4 @@ If you get this error, you installed your modules wrong, go back to the previous
 
 This error or the SteamGuardMobile version of this means steamguard was set up, and we can't log in without the auth code from the mobile authenticator!! Woohoo! The logging in part worked, at least. We'll talk about generating an auth code using sharedsecret to fully login to Steam in the next chapter.
 
-
+[Chapter 1.1 - Steam Auth Codes](./Ch 1.1/README.md)
