@@ -97,7 +97,7 @@ So this is saying that once we have logged into steam (or alternatively, tried a
  if (err) {
  ```
 
- which checks if an error occured. If there was an error encountered logging in, we will have something in this variable and the if statement will run, otherwise `err` will be *undefined* (also known as *null): which means it has no value assigned to it. So if there's an error we will run this (the code in the if statement):
+ which checks if an error occured. If there was an error encountered logging in, we will have something in this variable and the if statement will run, otherwise `err` will be *undefined*: which means it has no value assigned to it. So if there's an error we will run this (the code in the if statement):
 
  ```js
 console.log("There was an error logging in! Error details: " + err.message);
