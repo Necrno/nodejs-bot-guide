@@ -28,28 +28,42 @@ Alright, let's dive into how to set all this fun stuff up! I'll divide it up int
 
 ####Windows
 
-1. Download and install [node.js](https://nodejs.org/). Version shouldn't matter. I use 4.3.1.
-2. Installing node.js will also install npm, a package manager for node. This will make installing the packages super easy. To install the packages we need for the bot, type `npm install packagename` into command prompt. To start, we need `steamcommunity` and `steam-tradeoffer-manager`, written by [DoctorMcKay](http://github.com/DoctorMcKay). Open up command prompt (Start Menu -> cmd), navigate to where you want it installed (I did it in C://Users/Maxwell just because that's where my cmd starts, I recommend doing it in your login's main directory too.) Type `npm install steamcommunity`, wait for it to finish, and then do `npm install steam-tradeoffer-manager`
+#####1. Download and install [node.js](https://nodejs.org/). Version shouldn't matter. I use 4.3.1.
+#####2. Installing node.js will also install npm, a package manager for node. This will make installing the packages super easy. To install the packages we need for the bot, type `npm install packagename` into command prompt. To start, we need `steamcommunity` and `steam-tradeoffer-manager`, written by [DoctorMcKay](http://github.com/DoctorMcKay). Open up command prompt (Start Menu -> cmd), navigate to where you want it installed (I did it in C://Users/Maxwell just because that's where my cmd starts, I recommend doing it in your login's main directory too.) Type `npm install steamcommunity`, wait for it to finish, and then do `npm install steam-tradeoffer-manager`
     * Alternatively, instead of figuring out exactly where you want to install, add the `-g` flag to the installation, so `npm install -g steamcommunity` will install steamcommunity globally on your computer.
-3. That's all. You're done. It should look like this when the module has installed:
+#####3. That's all. You're done. It should look like this when the module has installed:
 
 ![Like this](http://i.imgur.com/J3r6Lv5.png "A correctly installed module.")
 
-####Linux
+####Macintosh
 
-Disclaimer: I don't know Linux very well. My experience is limited just to Ubuntu on my VPS.
-
-1. My VPS came with node.js preinstalled (DigitalOcean one-click apps), so I don't know how to correctly do that. Try this: https://bitnami.com/stack/nodejs/installer
-2. 
+#####1. Download the Mac OS X Installer (.pkg) from https://nodejs.org/en/download/
+#####2. Open the installer - you might have to restart your computer when you finish
+#####3. Install the required modules
 
 ```
 $ npm install -g steamcommunity
 $ npm install -g steam-tradeoffer-manager
 ```
 
-####Macintosh
+####Linux
 
-I don't know how to use Macs well enough, sorry :P I'll learn and update the guide later.
+#####1. Install node.js using npm
+
+```
+$ sudo yum install npm
+$ sudo apt-get install npm
+
+$ sudo npm install -g n
+
+$ sudo n stable
+```
+
+#####2. Install the required modules
+```
+$ npm install -g steamcommunity
+$ npm install -g steam-tradeoffer-manager
+```
 
 ##Intro
 
