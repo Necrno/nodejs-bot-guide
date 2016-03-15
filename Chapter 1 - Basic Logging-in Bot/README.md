@@ -119,7 +119,7 @@ Now that we understand the code, we can now run it. Replace my username and pass
 
 #####Windows
 
-Navigate to wherever you saved the `login.js` file in this directory in command prompt. Find the path to that. For instance, I have it saved in `C:\Users\Maxwell\Desktop\Code Tutorial\node-js-bot-guide\Chapter 1 - Basic Logging-in Bot\`. `cd` to this path by typing this in command prompt:
+Navigate to wherever you saved the `login.js` file in this directory in Command Prompt. Find the path to that. For instance, I have it saved in `C:\Users\Maxwell\Desktop\Code Tutorial\node-js-bot-guide\Chapter 1 - Basic Logging-in Bot\`. `cd` to this path by typing this in command prompt:
 
 ```
 cd "C:\Users\Maxwell\Desktop\Code Tutorial\node-js-bot-guide\Chapter 1 - Basic Logging-in Bot\"
@@ -129,17 +129,25 @@ Obviously replacing my path to the file with yours. Now, to run the file, you si
 
 #####Macintosh
 
-I still don't know about this - if someone could add to this I'd be grateful.
+Navigate to wherever you saved the `login.js` file in this directory in Terminal. Find the path to that. For instance, I have it saved in `/Users/Maxwell/Code Tutorial` or simply `~/Code Tutorial`. `cd` to this path by typing this in Terminal:
+
+```
+cd ~/Code\ Tutorial
+```
+
+Or type `cd ` and drag the folder from Finder into your Terminal window.
+
+Obviously, replace my path to `login.js` with yours. Now, to run the file, you simply type `node login.js` into Terminal, telling node to run the file named `login.js` located in the `~/Code Tutorial` directory.
 
 #####Linux
 
-Navigate to wherever you saved the `login.js` file in this directory in terminal. Find the path to that. For instance, I have it saved in `/home/Maxwell/Code Tutorial`. `cd` to this path by typing this in terminal:
+Navigate to wherever you saved the `login.js` file in this directory in Terminal. Find the path to that. For instance, I have it saved in `/home/Maxwell/Code Tutorial`. `cd` to this path by typing this in Terminal:
 
 ```
 cd "/home/Maxwell/Code Tutorial"
 ```
 
-Obviously replacing my path to the file with yours. Now, to run the file, you simply type `node login.js` into terminal, telling node to run the file named login.js.
+Obviously, replace my path to `login.js` with yours. Now, to run the file, you simply type `node login.js` into Terminal, telling node to run the file named `login.js` located in the `/home/Maxwell/Code Tutorial` directory.
 
 ####Errors
 
