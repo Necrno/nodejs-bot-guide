@@ -5,6 +5,12 @@
 
 Hello! If you're reading this guide, you're probably interested in making your own bot for Steam. Luckily, I'm here to help! This guide will teach you some basic node.js, how the Steam API works, and how we can use that for bots.
 
+##Table of Contents
+
+* [Chapter 1 - Logging In](./Chapter 1 - Logging In/README.md)
+    * [Chapter 1.1 - Mobile Auth](./Chapter 1 - Logging In/Ch 1.1/README.md)
+* [Chapter 2 - Trades and Confirmations](./Chapter 2 - Trades and Confirmations/README.md)
+
 ##Who Am I?
 
 Hi, I'm [Charred](http://steamcommunity.com/id/charredGrass/)! I'm a 17-year-old student / bot developer. I've written stuff from Bitcoin for Keys bots to Steam chat bots for group chats. My language of choice for this is of course node.js, and I've learned through [Codecademy](http://codecademy.com) and just experimenting on my own. I've built my entire Steam inventory, and then some, just by selling my code. That's over $1250 worth of code, and it's still growing!
@@ -13,12 +19,16 @@ Hi, I'm [Charred](http://steamcommunity.com/id/charredGrass/)! I'm a 17-year-old
 
 My intention in creating this guide is to spread the knowledge of bot making and make it easier for everyone to have a bot. Some people are paying pretty big sums of money just for a CS:GO storage bot - I want to show you how simple it is to make your own. At the time I am writing this, I don't know how much I'll be able to contribute to the guide, and I will hopefully get to share everything I know about this.
 
+###Purpose
+
+I want to just point out that this guide's purpose. It is not by any means a guarantee that everything will work as intended, nor is it an ultimate guide that will let you create CSGOJackpot 2.0. In fact, it exists for people who are interested in coding for the sake of coding, not just for profit. Of course, some bots will naturally make profit, but there is no guarantee whatsoever that will happen!
+
 ##Other Stuff You Need
 
  * [node.js](http://nodejs.org/), of course! Download and install the appropriate version for your computer.
  * These npm packages - [steamcommmunity](https://github.com/DoctorMcKay/node-steamcommunity), [steam-user](https://github.com/DoctorMcKay/node-steam-user), and [steam-tradeoffer-manager](https://github.com/DoctorMcKay/node-steam-tradeoffer-manager). I'll teach you how to set these up later in the guide.
  * an extra Steam account. I opted to create an extra Steam account for my bots, and I purchased CS:GO on it to remove its limited status. I'd reccomend doing this too (a $5 or more game must be purchased in order to get an API key and invite friends), however, in a pinch your main Steam account will do.
- * [Steam Desktop Authenticator](http://github.com/Jessecar96/SteamDesktopAuthenticator) if you plan to use the bot for trading and need to confirm offers.
+ * [Steam Desktop Authenticator](http://github.com/Jessecar96/SteamDesktopAuthenticator) if you plan to use the bot for trading and need to confirm offers. Note that this is not *necessary*, you can generate mobile authentication codes through other methods. However, it's my preference and is the most simple for beginners in my opinion.
  * A phone capable of receiving SMS texts if you plan on using the bot for trading.
  * Patience. Making a bot is time-consuming, testing it is even more time-consuming. Take your time, and don't expect to make a CSGO Jackpot clone in 15 minutes. 
 
@@ -100,4 +110,4 @@ I won't explain the first one, simply because I don't know how it works. If you 
 
 At this point in the guide you should have your bot accounts's username and password. Hopefully you've bought a $5 or more game on the account, so it isn't stuck at level 0 and looks super sketchy. (I personally like to buy CS:GO during a Steam Sale and level my bots to level 10 for the text box.) If you plan to make a trade bot, you should also have the shared and identity secret for your account.
 
-[Next Chapter - Basic Login Bot](./Chapter 1 - Basic Logging-in Bot/README.md)
+[Next Chapter - Basic Login Bot](./Chapter 1 - Logging In/README.md)
