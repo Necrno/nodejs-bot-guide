@@ -1,10 +1,11 @@
 var SteamCommunity = require('steamcommunity');
+var SteamTotp = require('steam-totp');
 var steam = new SteamCommunity();
 
 var logOnOptions = {
   'accountName': "CharredBot04",
   'password': "myPasswordGoesHere",
-  'twoFactorCode': SteamTotp.generateAuthCode("cnOgv/KdpLoP6Nbh0GMkXkPXALQ="); //this line and the comma before it can be removed if you don't have mobile auth enabled, but I'm assuming you do if you plan to trade
+  'twoFactorCode': SteamTotp.generateAuthCode("cnOgv/KdpLoP6Nbh0GMkXkPXALQ=") //this line and the comma before it can be removed if you don't have mobile auth enabled, but I'm assuming you do if you plan to trade
 };
 
 var identitySecret = ""; //get this in the intro!
