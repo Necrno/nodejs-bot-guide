@@ -10,10 +10,14 @@ Hello! If you're reading this guide, you're probably interested in making your o
 * [Chapter 1 - Logging In](./Chapter 1 - Logging In/README.md)
     * [Chapter 1.1 - Mobile Auth](./Chapter 1 - Logging In/Ch 1.1/README.md)
 * [Chapter 2 - Trades and Confirmations](./Chapter 2 - Trades and Confirmations/README.md)
+* [Contributing Info](./CONTRIBUTING.md)
 
 ##Who Am I?
 
 Hi, I'm [Charred](http://steamcommunity.com/id/charredGrass/)! I'm a 17-year-old student / bot developer. I've written stuff from Bitcoin for Keys bots to Steam chat bots for group chats. My language of choice for this is of course node.js, and I've learned through [Codecademy](http://codecademy.com) and just experimenting on my own. I've built my entire Steam inventory, and then some, just by selling my code. That's over $1250 worth of code, and it's still growing!
+
+##Help Beyond This Guide
+
 
 ##Preface
 
