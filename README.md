@@ -18,6 +18,7 @@ Hi, I'm [Charred](http://steamcommunity.com/id/charredGrass/)! I'm a 17-year-old
 
 ##Help Beyond This Guide
 
+Need help? [Sumbit an issue](https://github.com/charredgrass/nodejs-bot-guide/issues)! I get email notifications from issues, so I'll be around to help as soon as I can!
 
 ##Preface
 
