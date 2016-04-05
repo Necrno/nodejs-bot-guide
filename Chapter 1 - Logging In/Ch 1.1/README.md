@@ -23,7 +23,7 @@ To use this to login to Steam in the previous chapter, we simply add `twoFactorC
 var logOnOptions = {
   'accountName': "CharredBot04",
   'password': "myPasswordGoesHere",
-  'twoFactorCode': SteamTotp.generateAuthCode("cnOgv/KdpLoP6Nbh0GMkXkPXALQ=");
+  'twoFactorCode': SteamTotp.generateAuthCode("cnOgv/KdpLoP6Nbh0GMkXkPXALQ=")
 };
 ```
 
