@@ -9,6 +9,7 @@ Check out [confirm.js](./confirm.js), located in this directory.
 ```js
 var SteamCommunity = require('steamcommunity');
 var steam = new SteamCommunity();
+var SteamTotp = require('steam-totp');
 
 var logOnOptions = {
   'accountName': "CharredBot04",
