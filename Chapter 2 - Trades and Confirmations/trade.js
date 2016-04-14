@@ -1,4 +1,5 @@
 var SteamCommunity = require('steamcommunity');
+var SteamTotp = require("steam-totp");
 var steam = new SteamCommunity();
 var TradeOfferManager = require('steam-tradeoffer-manager');
 var manager = new TradeOfferManager({
