@@ -44,7 +44,7 @@ Here we should just replace the empty string (that's what the `""` is called) wi
 steam.startConfirmationChecker(10000, identitySecret);
 ```
 
-This is the good stuff. `steamcommunity` has a built in confirmations checker, this line activates it. The first parameter (the `10000`) denotes how often the script will check confirmations, in this case, it's every 10000 ms (10 seconds). Our `identitySecret` variable is also given to it, which tells the module to act on the confirmations using our IdentitySecert - that is, it will accept any confirmation it sees. 
+This is the good stuff. `steamcommunity` has a built in confirmations checker, this line activates it. The first parameter (the `10000`) denotes how often the script will check confirmations, in this case, it's every 10000 ms (10 seconds). Our `identitySecret` variable is also given to it, which tells the module to act on the confirmations using our IdentitySecret - that is, it will accept any confirmation it sees.
 
 **Warning** Doing this will accept any confirmations on the given account while the script is logged on. Use at your own risk.
 
@@ -104,7 +104,7 @@ function processTrade(offer) {
 }
 ```
 
-That's quite a bit of new stuff. 
+That's quite a bit of new stuff.
 
 At the top, this was added:
 
@@ -117,7 +117,7 @@ var manager = new TradeOfferManager({
 });
 ```
 
-The `require` bit tells the computer to use the steam-tradeoffer-manager module, and the part below that creates the trade manager (which we are holding in a variable named `manager`). You can see that it requires a little info. `domain` can be any web domain, I use my free github domain but it doesn't actually matter, this is just needed to get the API key from Steam. `language` is set to English, you obviously speak English if you're reading this guide. `pollInterval` tells the manager to check every this many milliseconds - in this case 30000 ms (= 30 seconds). 
+The `require` bit tells the computer to use the steam-tradeoffer-manager module, and the part below that creates the trade manager (which we are holding in a variable named `manager`). You can see that it requires a little info. `domain` can be any web domain, I use my free github domain but it doesn't actually matter, this is just needed to get the API key from Steam. `language` is set to English, you obviously speak English if you're reading this guide. `pollInterval` tells the manager to check every this many milliseconds - in this case 30000 ms (= 30 seconds).
 
 In the login section, we see that this has been added:
 
@@ -172,4 +172,4 @@ The next part is `offer.accept`. This tells the trade manager to, well, accept t
 
 Well, now you've hopefully gotten to a point where you can run something that accepts any trades. You could run this on an alternate account, make your main its only friend, set the account's inventory to friendsonly so only you can send it trade offers, and boom, storage bot! Since any offers will be accepted, it should be a fast way to transfer items you want to keep in storage (case investments, crappy 3 cent skins) into your alt.
 
- 
+*Next subchapter - make a public donations bot.*

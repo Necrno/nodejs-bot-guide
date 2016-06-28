@@ -11,7 +11,7 @@ var manager = new TradeOfferManager({
 var logOnOptions = {
 	'accountName': "CharredBot04",
 	'password': "myPasswordGoesHere",
-	'twoFactorCode': SteamTotp.generateAuthCode("cnOgv/KdpLoP6Nbh0GMkXkPXALQ=") //this line and the comma before it can be removed if you don't have mobile auth enabled, but I'm assuming you do if you plan to trade
+	'twoFactorCode': SteamTotp.generateAuthCode("cnOgv/KdpLoP6Nbh0GMkXkPXALQ="); //this line and the comma before it can be removed if you don't have mobile auth enabled, but I'm assuming you do if you plan to trade
 };
 
 var identitySecret = "";
@@ -38,11 +38,24 @@ manager.on('newOffer', processTrade);
 
 function processTrade(offer) {
 	console.log("New trade from " + offer.partner);
-	offer.accept(function(err) {
-		if (err) {
-			console.log("Error accepting offer: " + err.message);
-		} else {
-			console.log("Successfully accepted an offer.");
-		}
-	})
+  var toGet = offer.itemsToReceive;
+	var toGive = offer.itemsToGive;
+  //I like to rename the item arrays just because I'm really bad at spelling "Receive"
+  if (toGive.length == 0 || offer.partner.getSteamID64() === "76561198058896751") {
+    offer.accept(function(err) {
+  		if (err) {
+  			console.log("Error accepting offer: " + err.message);
+  		} else {
+  			console.log("Successfully accepted an offer.");
+  		}
+  	});
+  } else {
+    offer.decline(function(err) {
+      if (err) {
+  			console.log("Error declining offer: " + err.message);
+  		} else {
+  			console.log("Successfully accepted an offer.");
+  		}
+    });
+  }
 }
