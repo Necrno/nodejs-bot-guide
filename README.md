@@ -12,6 +12,7 @@ Hello! If you're reading this guide, you're probably interested in making your o
 * [Chapter 1 - Logging In](./Chapter 1 - Logging In/README.md)
     * [Chapter 1.1 - Mobile Auth](./Chapter 1 - Logging In/Ch 1.1/README.md)
 * [Chapter 2 - Trades and Confirmations](./Chapter 2 - Trades and Confirmations/README.md)
+    * [Chapter 2.1 - Donations Bot](./Chapter 2 - Trades and Confirmations/Ch 2.1/README.md)
 * [Contributing Info](./CONTRIBUTING.md)
 
 ##Who Am I?
@@ -28,7 +29,7 @@ My intention in creating this guide is to spread the knowledge of bot making and
 
 ###Purpose
 
-I want to just point out that this guide's purpose. It is not by any means a guarantee that everything will work as intended, nor is it an ultimate guide that will let you create CSGOJackpot 2.0. In fact, it exists for people who are interested in coding for the sake of coding, not just for profit. Of course, some bots will naturally make profit, but there is no guarantee whatsoever that will happen!
+I want to just point out that this guide's purpose. It is not by any means a guarantee that everything will work as intended, nor is it an ultimate guide that will let you create CSGOJackpot 2.0. In fact, it exists for people who are interested in coding for the sake of coding, not just for profit. Of course, some bots will naturally make profit, but there is no guarantee whatsoever that will happen.
 
 ##Other Stuff You Need
 
@@ -37,7 +38,7 @@ I want to just point out that this guide's purpose. It is not by any means a gua
  * an extra Steam account. I opted to create an extra Steam account for my bots, and I purchased CS:GO on it to remove its limited status. I'd reccomend doing this too (a $5 or more game must be purchased in order to get an API key and invite friends), however, in a pinch your main Steam account will do.
  * [Steam Desktop Authenticator](http://github.com/Jessecar96/SteamDesktopAuthenticator) if you plan to use the bot for trading and need to confirm offers. Note that this is not *necessary*, you can generate mobile authentication codes through other methods. However, it's my preference and is the most simple for beginners in my opinion.
  * A phone capable of receiving SMS texts if you plan on using the bot for trading.
- * Patience. Making a bot is time-consuming, testing it is even more time-consuming. Take your time, and don't expect to make a CSGO Jackpot clone in 15 minutes. 
+ * Patience. Making a bot is time-consuming, testing it is even more time-consuming. Take your time, and don't expect to make a CSGO Jackpot clone in 15 minutes.
 
 ##Installation
 
@@ -86,7 +87,7 @@ $ npm install -g steam-tradeoffer-manager
 
 ####What is node.js?
 
-You may have heard of *JavaScript*, a web development language to run scripts in browser. From the node.js website, node is "a JavaScript runtime built on Chrome's V8 JavaScript engine". We can use node.js to make web apis, manage a server, or manage bots like we'll learn here. 
+You may have heard of *JavaScript*, a web development language to run scripts in browser. From the node.js website, node is "a JavaScript runtime built on Chrome's V8 JavaScript engine". We can use node.js to make web apis, manage a server, or manage bots like we'll learn here.
 
 ##Setting it up
 
@@ -103,6 +104,8 @@ and
 * [Steam Desktop Auth](http://github.com/Jessecar96/SteamDesktopAuthenticator) aka SDA.
 
 I won't explain the first one, simply because I don't know how it works. If you already have authentication set up on an iOS device and want to use that account for the bot it should be easy. However, if you own an Android device or haven't set up authentication on the bot account yet, SDA is preferable. (An alternative for Android is also [this](https://www.reddit.com/r/SteamBot/comments/3w5zwb/info_get_your_2fa_codes_from_android_no_root/))
+
+*Note - Steam Desktop Authenticator is not absolutely necessary. There are alternatives to this, including one built into node-steamcommunity. I use this because it requires less programming and has a neat UI if you want to use the account for non-bot stuff.*
 
 ####Setting up the Authenticator with SDA
 
