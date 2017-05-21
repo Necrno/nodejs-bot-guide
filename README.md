@@ -7,7 +7,7 @@
 
 Hello! If you're reading this guide, you're probably interested in making your own bot for Steam. Luckily, I'm here to help! This guide will teach you some basic node.js, how the Steam API works, and how we can use that for bots.
 
-##Table of Contents
+## Table of Contents
 
 * [Chapter 1 - Logging In](./Chapter 1 - Logging In/README.md)
     * [Chapter 1.1 - Mobile Auth](./Chapter 1 - Logging In/Ch 1.1/README.md)
@@ -15,7 +15,7 @@ Hello! If you're reading this guide, you're probably interested in making your o
     * [Chapter 2.1 - Donations Bot](./Chapter 2 - Trades and Confirmations/Ch 2.1/README.md)
 * [Contributing Info](./CONTRIBUTING.md)
 
-##Who Am I?
+## Who Am I?
 
 Hi, I'm [Charred](http://steamcommunity.com/id/charredGrass/)! I'm a 17-year-old student / bot developer. I've written stuff from Bitcoin for Keys bots to Steam chat bots for group chats. My language of choice for this is of course node.js, and I've learned through [Codecademy](http://codecademy.com) and just experimenting on my own. I've built my entire Steam inventory, and then some, just by selling my code. That's over $1250 worth of code, and it's still growing!
 
@@ -23,15 +23,15 @@ Hi, I'm [Charred](http://steamcommunity.com/id/charredGrass/)! I'm a 17-year-old
 
 Need help? [Sumbit an issue](https://github.com/charredgrass/nodejs-bot-guide/issues)! I get email notifications from issues, so I'll be around to help as soon as I can!
 
-##Preface
+## Preface
 
 My intention in creating this guide is to spread the knowledge of bot making and make it easier for everyone to have a bot. Some people are paying pretty big sums of money just for a CS:GO storage bot - I want to show you how simple it is to make your own. At the time I am writing this, I don't know how much I'll be able to contribute to the guide, and I will hopefully get to share everything I know about this.
 
-###Purpose
+### Purpose
 
 I want to just point out that this guide's purpose. It is not by any means a guarantee that everything will work as intended, nor is it an ultimate guide that will let you create CSGOJackpot 2.0. In fact, it exists for people who are interested in coding for the sake of coding, not just for profit. Of course, some bots will naturally make profit, but there is no guarantee whatsoever that will happen.
 
-##Other Stuff You Need
+## Other Stuff You Need
 
  * [node.js](http://nodejs.org/), of course! Download and install the appropriate version for your computer.
  * These npm packages - [steamcommmunity](https://github.com/DoctorMcKay/node-steamcommunity), [steam-user](https://github.com/DoctorMcKay/node-steam-user), and [steam-tradeoffer-manager](https://github.com/DoctorMcKay/node-steam-tradeoffer-manager). I'll teach you how to set these up later in the guide.
@@ -40,33 +40,33 @@ I want to just point out that this guide's purpose. It is not by any means a gua
  * A phone capable of receiving SMS texts if you plan on using the bot for trading.
  * Patience. Making a bot is time-consuming, testing it is even more time-consuming. Take your time, and don't expect to make a CSGO Jackpot clone in 15 minutes.
 
-##Installation
+## Installation
 
 Alright, let's dive into how to set all this fun stuff up! I'll divide it up into OSes.
 
-####Windows
+#### Windows
 
-#####1. Download and install [node.js](https://nodejs.org/). Version shouldn't matter. I use 4.3.1.
-#####2. Installing node.js will also install npm, a package manager for node. This will make installing the packages super easy. To install the packages we need for the bot, type `npm install packagename` into command prompt. To start, we need `steamcommunity` and `steam-tradeoffer-manager`, written by [DoctorMcKay](http://github.com/DoctorMcKay). Open up command prompt (Start Menu -> cmd), navigate to where you want it installed (I did it in C://Users/Maxwell just because that's where my cmd starts, I recommend doing it in your login's main directory too.) Type `npm install steamcommunity`, wait for it to finish, and then do `npm install steam-tradeoffer-manager`
+##### 1. Download and install [node.js](https://nodejs.org/). Version shouldn't matter. I use 4.3.1.
+##### 2. Installing node.js will also install npm, a package manager for node. This will make installing the packages super easy. To install the packages we need for the bot, type `npm install packagename` into command prompt. To start, we need `steamcommunity` and `steam-tradeoffer-manager`, written by [DoctorMcKay](http://github.com/DoctorMcKay). Open up command prompt (Start Menu -> cmd), navigate to where you want it installed (I did it in C://Users/Maxwell just because that's where my cmd starts, I recommend doing it in your login's main directory too.) Type `npm install steamcommunity`, wait for it to finish, and then do `npm install steam-tradeoffer-manager`
     * Alternatively, instead of figuring out exactly where you want to install, add the `-g` flag to the installation, so `npm install -g steamcommunity` will install steamcommunity globally on your computer.
-#####3. That's all. You're done. It should look like this when the module has installed:
+##### 3. That's all. You're done. It should look like this when the module has installed:
 
 ![Like this](http://i.imgur.com/J3r6Lv5.png "A correctly installed module.")
 
-####Macintosh
+#### Macintosh
 
-#####1. Download the Mac OS X Installer (.pkg) from https://nodejs.org/en/download/
-#####2. Open the installer - you might have to restart your computer when you finish
-#####3. Install the required modules
+##### 1. Download the Mac OS X Installer (.pkg) from https://nodejs.org/en/download/
+##### 2. Open the installer - you might have to restart your computer when you finish
+##### 3. Install the required modules
 
 ```
 $ npm install -g steamcommunity
 $ npm install -g steam-tradeoffer-manager
 ```
 
-####Linux
+#### Linux
 
-#####1. Install node.js using npm
+##### 1. Install node.js using npm
 
 ```
 $ sudo yum install npm
@@ -77,19 +77,19 @@ $ sudo npm install -g n
 $ sudo n stable
 ```
 
-#####2. Install the required modules
+##### 2. Install the required modules
 ```
 $ npm install -g steamcommunity
 $ npm install -g steam-tradeoffer-manager
 ```
 
-##Intro
+## Intro
 
-####What is node.js?
+#### What is node.js?
 
 You may have heard of *JavaScript*, a web development language to run scripts in browser. From the node.js website, node is "a JavaScript runtime built on Chrome's V8 JavaScript engine". We can use node.js to make web apis, manage a server, or manage bots like we'll learn here.
 
-##Setting it up
+## Setting it up
 
 At this point you should have installed node.js and installed the modules. Now I'll walk you through setting up a Steam account to work with it.
 
@@ -107,7 +107,7 @@ I won't explain the first one, simply because I don't know how it works. If you 
 
 *Note - Steam Desktop Authenticator is not absolutely necessary. There are alternatives to this, including one built into node-steamcommunity. I use this because it requires less programming and has a neat UI if you want to use the account for non-bot stuff.*
 
-####Setting up the Authenticator with SDA
+#### Setting up the Authenticator with SDA
 
 1. Install and run SDA.
 2. Connect your Steam account and follow all the basic steps.
@@ -116,7 +116,7 @@ I won't explain the first one, simply because I don't know how it works. If you 
 5. Open this file up in a text editor. If you're new to using a text editor other than Notepad I recommend Notepad++.
 6. Find where it says `shared_secret` and `identity_secret` in the file. It will say something such as `"shared_secret": "mOdR6e5ij19v2xTpDjQMfK04Hvo="` in one location and something similar with `identity_secret` in another. These are the values of shared and identity secret. Save them. They will not change unless you remove authentication from this account.
 
-##Finishing Up
+## Finishing Up
 
 At this point in the guide you should have your bot accounts's username and password. Hopefully you've bought a $5 or more game on the account, so it isn't stuck at level 0 and looks super sketchy. (I personally like to buy CS:GO during a Steam Sale and level my bots to level 10 for the text box.) If you plan to make a trade bot, you should also have the shared and identity secret for your account.
 
