@@ -9,10 +9,13 @@ Hello! If you're reading this guide, you're probably interested in making your o
 
 ## Table of Contents
 
-* [Chapter 1 - Logging In][1]
-    * [Chapter 1.1 - Mobile Auth][2]
-* [Chapter 2 - Trades and Confirmations][3]
-    * [Chapter 2.1 - Donations Bot][4]
+* [Chapter 1: Logging In][1]
+    * [Chapter 1.1: Mobile Auth][2]
+* [Chapter 2: Trades and Confirmations][3]
+    * [Chapter 2.1: Donations Bot][4]
+* [Chapter 3: Chat][5]
+* [Intermission: Data Types][6]
+* [Extra Information]
 * [Contributing Info]
 
 ## Who Am I?
@@ -126,4 +129,7 @@ At this point in the guide you should have your bot accounts's username and pass
 [2]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%201%20-%20Logging%20In/Ch%201.1
 [3]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%202%20-%20Trades%20and%20Confirmations
 [4]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%202%20-%20Trades%20and%20Confirmations/Ch%202.1
+[5]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%203%20-%20Chat
+[Extra Information]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Extra%20Information
+[6]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Intermission%20-%20Data%20Types
 [Contributing Info]: https://github.com/charredgrass/nodejs-bot-guide/blob/master/CONTRIBUTING.md
