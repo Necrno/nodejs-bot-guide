@@ -1,8 +1,8 @@
-#Chapter 2 - Trades and Confirmations
+# Chapter 2 - Trades and Confirmations
 
 Now that we've logged in successfully with `steamcommunity`, it's time to start doing trades. This chapter will aim to cover trade processing (accepting trade offers, etc.) and confirmations (trade, market listings, or anything that shows up in the mobile app's confirmations tab). Confirmations are made very easy thanks to DrMcKay, so we'll start with that.
 
-##Confirmations
+## Confirmations
 
 Check out [confirm.js](./confirm.js), located in this directory.
 
@@ -50,7 +50,7 @@ This is the good stuff. `steamcommunity` has a built in confirmations checker, t
 
 Well, that's it for confirmations - simple, isn't it? Now moving on to the more complex part - trades.
 
-##Trade Handling
+## Trade Handling
 
 Let's take a look at [trade.js](./trade.js), an extension of the confirmations script.
 
@@ -168,8 +168,14 @@ The first line, (the `console.log` statement) prints to the console that we've r
 
 The next part is `offer.accept`. This tells the trade manager to, well, accept the offer. This means that when trade.js is being run, it will accept **any** trade it is given (and confirm it!) so be careful when running this script and don't leave it running on an account with valuables in it. The part inside of accept is just error handling - if it encounters an error when accepting the trade, it will say so, otherwise it will tell you in console that it was a success.
 
-##So what now?
+## So what now?
 
 Well, now you've hopefully gotten to a point where you can run something that accepts any trades. You could run this on an alternate account, make your main its only friend, set the account's inventory to friendsonly so only you can send it trade offers, and boom, storage bot! Since any offers will be accepted, it should be a fast way to transfer items you want to keep in storage (case investments, crappy 3 cent skins) into your alt.
 
-*Next subchapter - make a public donations bot.*
+[Next subchapter - make a public donations bot.][4]
+
+[1]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%201%20-%20Logging%20In
+[2]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%201%20-%20Logging%20In/Ch%201.1
+[3]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%202%20-%20Trades%20and%20Confirmations
+[4]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%202%20-%20Trades%20and%20Confirmations/Ch%202.1
+[Contributing Info]: https://github.com/charredgrass/nodejs-bot-guide/blob/master/CONTRIBUTING.md

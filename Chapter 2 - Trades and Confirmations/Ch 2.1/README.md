@@ -1,4 +1,4 @@
-#Chapter 2.1 - The Donation Bot
+# Chapter 2.1 - The Donation Bot
 
 Time to learn something quite useful - a donation bot. It will check its trade offers, and if any of them will give items to the bot without the bot losing any items, it will accept it.
 

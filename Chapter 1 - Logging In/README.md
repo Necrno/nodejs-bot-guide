@@ -27,7 +27,7 @@ steam.login(logOnOptions, function(err, sessionID, cookies, steamguard) {
 
 Let's break it down step by step!
 
-####Modules
+#### Modules
 
 node.js comes with npm, a package manager for node. This allows us to use the packages we installed earlier. To use the `steamcommunity` module we installed, we do the first line:
 
@@ -43,7 +43,7 @@ var steam = new SteamCommunity();
 
 which creates a SteamCommunity object from the module. It basically allows us to use the functions of the steamcommunity module and storing that object in the `steam` variable. **You don't need to know how this works right now**, I will explain this more in depth later.
 
-####Objects
+#### Objects
 
 ```js
 var logOnOptions = {
@@ -54,7 +54,7 @@ var logOnOptions = {
 
 This creates a variable called `logOnOptions`, and stores our username and password in it. Obviously, we should replace "CharredBot04" with your account's username (the name you log in with, not display name) and "myPasswordGoesHere" with your account password (no, that's not my real password). I will explain Objects more in depth later on and what we can store in them: all we need to know is that logOnOptions has the `accountName` and `password` attributes (called *keys*).
 
-####Logging In
+#### Logging In
 
 ```js
 steam.login(logOnOptions, function(err, sessionID, cookies, steamguard) {
@@ -113,11 +113,11 @@ steam.chatLogon();
 
 This is also very simple - it prints to console that we successfully logged in, and logs into chat.
 
-####Running the code
+#### Running the code
 
 Now that we understand the code, we can now run it. Replace my username and password with yours. Let's run the code now! It's kind of OS specific to run it, so let's break it down again by OS.
 
-#####Windows
+##### Windows
 
 Navigate to wherever you saved the `login.js` file in this directory in Command Prompt. Find the path to that. For instance, I have it saved in `C:\Users\Maxwell\Desktop\Code Tutorial\node-js-bot-guide\Chapter 1 - Basic Logging-in Bot\`. `cd` to this path by typing this in command prompt:
 
@@ -127,7 +127,7 @@ cd "C:\Users\Maxwell\Desktop\Code Tutorial\node-js-bot-guide\Chapter 1 - Basic L
 
 Obviously replacing my path to the file with yours. Now, to run the file, you simply type `node login.js` into command prompt, telling node to run the file named login.js.
 
-#####Macintosh
+##### Macintosh
 
 Navigate to wherever you saved the `login.js` file in this directory in Terminal. Find the path to that. For instance, I have it saved in `/Users/Maxwell/Code Tutorial` or simply `~/Code Tutorial`. `cd` to this path by typing this in Terminal:
 
@@ -139,7 +139,7 @@ Or type `cd ` and drag the folder from Finder into your Terminal window.
 
 Obviously, replace my path to `login.js` with yours. Now, to run the file, you simply type `node login.js` into Terminal, telling node to run the file named `login.js` located in the `~/Code Tutorial` directory.
 
-#####Linux
+##### Linux
 
 Navigate to wherever you saved the `login.js` file in this directory in Terminal. Find the path to that. For instance, I have it saved in `/home/Maxwell/Code Tutorial`. `cd` to this path by typing this in Terminal:
 
@@ -149,17 +149,23 @@ cd "/home/Maxwell/Code Tutorial"
 
 Obviously, replace my path to `login.js` with yours. Now, to run the file, you simply type `node login.js` into Terminal, telling node to run the file named `login.js` located in the `/home/Maxwell/Code Tutorial` directory.
 
-####Errors
+#### Errors
 
 You're bound to face errors, and if you've properly set up Steam Mobile Authentication in the previous chapter, you *should* hit an error! Let's run through all the stuff that could go wrong!
 
 
-#####Cannot find module: steamcommunity
+##### Cannot find module: steamcommunity
 
 If you get this error, you installed your modules wrong, go back to the previous chapter and install it properly.
 
-#####There was an error logging in! Error details: SteamGuard
+##### There was an error logging in! Error details: SteamGuard
 
 This error or the SteamGuardMobile version of this means steamguard was set up, and we can't log in without the auth code from the mobile authenticator!! Woohoo! The logging in part worked, at least. We'll talk about generating an auth code using sharedsecret to fully login to Steam in the next chapter.
 
-[Chapter 1.1 - Steam Auth Codes](./Ch 1.1/README.md)
+[Chapter 1.1 - Steam Auth Codes][2]
+
+[1]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%201%20-%20Logging%20In
+[2]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%201%20-%20Logging%20In/Ch%201.1
+[3]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%202%20-%20Trades%20and%20Confirmations
+[4]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%202%20-%20Trades%20and%20Confirmations/Ch%202.1
+[Contributing Info]: https://github.com/charredgrass/nodejs-bot-guide/blob/master/CONTRIBUTING.md
