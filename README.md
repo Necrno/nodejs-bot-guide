@@ -10,9 +10,9 @@ Hello! If you're reading this guide, you're probably interested in making your o
 ## Table of Contents
 
 * [Chapter 1 - Logging In](./Chapter 1 - Logging In/README.md)
-    * [Chapter 1.1 - Mobile Auth](./Chapter 1 - Logging In/Ch 1.1/README.md)
+    * [Chapter 1.1 - Mobile Auth](/Chapter 1 - Logging In/Ch 1.1/README.md)
 * [Chapter 2 - Trades and Confirmations](./Chapter 2 - Trades and Confirmations/README.md)
-    * [Chapter 2.1 - Donations Bot](./Chapter 2 - Trades and Confirmations/Ch 2.1/README.md)
+    * [Chapter 2.1 - Donations Bot](/Chapter 2 - Trades and Confirmations/Ch 2.1/README.md)
 * [Contributing Info](./CONTRIBUTING.md)
 
 ## Who Am I?
