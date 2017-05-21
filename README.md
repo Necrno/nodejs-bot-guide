@@ -9,11 +9,11 @@ Hello! If you're reading this guide, you're probably interested in making your o
 
 ## Table of Contents
 
-* [Chapter 1 - Logging In](./Chapter 1 - Logging In/README.md)
-    * [Chapter 1.1 - Mobile Auth](/Chapter 1 - Logging In/Ch 1.1/README.md)
-* [Chapter 2 - Trades and Confirmations](./Chapter 2 - Trades and Confirmations/README.md)
-    * [Chapter 2.1 - Donations Bot](/Chapter 2 - Trades and Confirmations/Ch 2.1/README.md)
-* [Contributing Info](./CONTRIBUTING.md)
+* [Chapter 1 - Logging In][1]
+    * [Chapter 1.1 - Mobile Auth][2]
+* [Chapter 2 - Trades and Confirmations][3]
+    * [Chapter 2.1 - Donations Bot][4]
+* [Contributing Info]
 
 ## Who Am I?
 
@@ -48,7 +48,7 @@ Alright, let's dive into how to set all this fun stuff up! I'll divide it up int
 
 ##### 1. Download and install [node.js](https://nodejs.org/). Version shouldn't matter. I use 4.3.1.
 ##### 2. Installing node.js will also install npm, a package manager for node. This will make installing the packages super easy. To install the packages we need for the bot, type `npm install packagename` into command prompt. To start, we need `steamcommunity` and `steam-tradeoffer-manager`, written by [DoctorMcKay](http://github.com/DoctorMcKay). Open up command prompt (Start Menu -> cmd), navigate to where you want it installed (I did it in C://Users/Maxwell just because that's where my cmd starts, I recommend doing it in your login's main directory too.) Type `npm install steamcommunity`, wait for it to finish, and then do `npm install steam-tradeoffer-manager`
-    * Alternatively, instead of figuring out exactly where you want to install, add the `-g` flag to the installation, so `npm install -g steamcommunity` will install steamcommunity globally on your computer.
+* Alternatively, instead of figuring out exactly where you want to install, add the `-g` flag to the installation, so `npm install -g steamcommunity` will install steamcommunity globally on your computer.
 ##### 3. That's all. You're done. It should look like this when the module has installed:
 
 ![Like this](http://i.imgur.com/J3r6Lv5.png "A correctly installed module.")
@@ -120,4 +120,10 @@ I won't explain the first one, simply because I don't know how it works. If you 
 
 At this point in the guide you should have your bot accounts's username and password. Hopefully you've bought a $5 or more game on the account, so it isn't stuck at level 0 and looks super sketchy. (I personally like to buy CS:GO during a Steam Sale and level my bots to level 10 for the text box.) If you plan to make a trade bot, you should also have the shared and identity secret for your account.
 
-[Next Chapter - Basic Login Bot](./Chapter 1 - Logging In/README.md)
+[Next Chapter - Basic Login Bot][1]
+
+[1]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%201%20-%20Logging%20In
+[2]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%201%20-%20Logging%20In/Ch%201.1
+[3]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%202%20-%20Trades%20and%20Confirmations
+[4]: https://github.com/charredgrass/nodejs-bot-guide/tree/master/Chapter%202%20-%20Trades%20and%20Confirmations/Ch%202.1
+[Contributing Info]: https://github.com/charredgrass/nodejs-bot-guide/blob/master/CONTRIBUTING.md
