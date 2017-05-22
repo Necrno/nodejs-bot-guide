@@ -1,4 +1,4 @@
-#Chapter 1.1 - Logging in with SteamGuard
+# Chapter 1.1 - Logging in with SteamGuard
 
 [Previous Chapter](../README.md)
 

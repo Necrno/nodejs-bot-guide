@@ -1,4 +1,4 @@
-#Intermission - Data Types
+# Intermission - Data Types
 
 Now we've gotten to the point where I want to talk to you about some data types.
 
@@ -6,7 +6,7 @@ This chapter is optional, but it should increase your understanding of node.js.
 
 ---
 
-##Dynamic Typing
+## Dynamic Typing
 
 JavaScript has something called *dynamic typing*. According to [MDN](https://developer.mozilla.org/en/docs/Web/JavaScript/Data_structures):
 
@@ -30,7 +30,7 @@ This throws a `TypeError` in Java and will not compile, because x is defined as 
 
 ---
 
-##Primitive Data types
+## Primitive Data types
 
 If you've taken a class in another language before, you have probably heard this term. It refers to non-Object types such as Strings or Numbers. In JavaScript ES6 (which is what we'll be working with) the primitive data types are `Boolean`, `Null`, `Undefined`, `Number`, `String`, and `Symbol`.
 
@@ -48,7 +48,7 @@ A `Symbol` is something we need not worry about. If you really want to know what
 
 ---
 
-##Objects
+## Objects
 
 You may have heard me say `Object` a lot but have no idea what I mean. MDN describes Objects better than I can:
 
@@ -71,7 +71,7 @@ This isn't the full capability of the `Object` type, it's just JSON which is a v
 
 ---
 
-##Arrays
+## Arrays
 
 Actually, technically, an Array is an `Object`. That's not stopping me, I'm still talking about it.
 
@@ -88,7 +88,7 @@ Arrays have many built in properties and functions - for instance you can use `.
 
 ---
 
-##functions
+## functions
 
 Functions are pretty important. They're essentially pieces of code that you can save in a variable. Here's an example of a functions
 
