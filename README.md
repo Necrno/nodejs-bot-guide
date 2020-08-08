@@ -5,6 +5,10 @@
 
 [![GitHub issues](https://img.shields.io/github/issues/charredgrass/nodejs-bot-guide.svg)](https://github.com/charredgrass/nodejs-bot-guide/issues) [![GitHub forks](https://img.shields.io/github/forks/charredgrass/nodejs-bot-guide.svg)](https://github.com/charredgrass/nodejs-bot-guide/network) [![GitHub stars](https://img.shields.io/github/stars/charredgrass/nodejs-bot-guide.svg)](https://github.com/charredgrass/nodejs-bot-guide/stargazers)
 
+# :warning: WARNING: THIS GUIDE IS NO LONGER MAINTAINED
+
+**This guide has not been updated in several years. I strongly recommend finding a different resource that is actively maintained.**
+
 Hello! If you're reading this guide, you're probably interested in making your own bot for Steam. Luckily, I'm here to help! This guide will teach you some basic node.js, how the Steam API works, and how we can use that for bots.
 
 ## Table of Contents
